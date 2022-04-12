@@ -1,0 +1,40 @@
+@import "../../variables.module";
+
+.dropdownList {
+  width: 100px;
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  top: 40px;
+  left: -20px;
+  text-align: start;
+  user-select: none;
+  box-shadow: 0 0 2px 2px grey;
+}
+
+.dropdownListItem {
+  font-weight: 500;
+  font-family: $primary-font;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  background-color: inherit;
+
+  span {
+    left: 20px;
+    position: absolute;
+  }
+
+  &:hover {
+    background-color: gray;
+  }
+
+  &.active {
+    background-color: rgb(238, 238, 238);
+  }
+}

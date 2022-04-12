@@ -1,0 +1,225 @@
+@import "../../variables.module";
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: start;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 55px;
+}
+
+.itemsWrapper {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.item {
+  border-top: 1px solid #E5E5E5;;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.brand {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.price {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.attrWrapper {
+  display: flex;
+}
+
+.attrName {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-family: $tertiary-font;
+  text-transform: uppercase;
+}
+
+.chosenAttr {
+  color: white;
+  background-color: black;
+}
+
+.attr {
+  margin-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $quaternary-font;
+  border: 1px solid black;
+  cursor: default;
+  width: 65px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color {
+  margin-right: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 32px;
+  height: 32px;
+
+}
+
+.chosenColor {
+  box-shadow: 0 0 0 2px #FFFFFF,
+  0 0 0 4px #5ECE7B;
+}
+
+.imgBtnWrapper {
+  display: flex;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.changeQuantityButton {
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  background: inherit;
+  font-size: 25px;
+}
+
+.textInfo {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.buyButton {
+  width: 300px;
+  height: 45px;
+  background-color: #5ECE7B;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.overlay {
+
+  .itemsWrapper {
+    border: none;
+  }
+
+  .headline {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .item {
+    border-top: none;
+  }
+
+  .brand {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .name {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .price {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .attrName {
+    text-transform: capitalize;
+    font-family: $primary-font;
+  }
+
+  .attr {
+    width: 40px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .color {
+    width: 20px;
+    height: 20px;
+  }
+
+  .quantity {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .changeQuantityButton {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .imgBtnWrapper {
+    margin-left: 10px;
+  }
+
+  .priceWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .textInfo {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: $secondary-font;
+  }
+
+  .totalPrice {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+    background-color: #5ECE7B;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 40px;
+  }
+}

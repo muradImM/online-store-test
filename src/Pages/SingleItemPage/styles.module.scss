@@ -1,0 +1,86 @@
+@import "../../variables.module";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.container {
+  margin-top: 70px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.infoWrapper {
+  display: inline-block;
+}
+
+.costTitle {
+  text-align: start;
+  font-family: $tertiary-font;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.cost {
+  font-weight: 700;
+  text-align: start;
+}
+
+.name {
+  margin: 0 0 43px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 30px;
+
+}
+
+.brand {
+  text-align: start;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 0 16px;
+}
+
+.buyButton {
+  width: 100%;
+  background-color: #5ECE7B;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &:disabled {
+    border: 1px solid grey;
+    color: grey;
+    background-color: white;
+  }
+}
+
+.descriptions {
+  font-family: $secondary-font;
+  font-weight: 400;
+  margin-top: 40px;
+
+  ul {
+    padding-left: 18px;
+    list-style-type: "\2705";
+    li {
+      padding: 5px;
+    }
+  }
+
+  text-align: start;
+}

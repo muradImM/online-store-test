@@ -1,0 +1,38 @@
+@import "../../variables.module.scss";
+
+.switcherWrapper {
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+}
+
+.dropdownButton {
+  position: relative;
+  padding-right: 10px;
+  font-weight: 500;
+  background: inherit;
+  border: none;
+  font-family: $primary-font;
+  font-size: 18px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 1px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg) translateY(-100%);
+    pointer-events: none;
+  }
+
+  &.active:before {
+    top: 70%;
+    transform: rotate(-135deg) translateY(100%);
+  }
+}

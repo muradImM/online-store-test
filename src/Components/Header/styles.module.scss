@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding-left: 80px;
+  padding-right: 80px;
+    //width: 100%;
+    //position: fixed;
+    //z-index: 100;
+    //top: 0;
+    //box-sizing: border-box;
+}
+
+.nav {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cartWrapper {
+  position: relative;
+}
+
+.cartButton {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  color: white;
+  top: 0;
+  transform: translate(80%, -60%);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}

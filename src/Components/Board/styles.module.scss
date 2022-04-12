@@ -1,0 +1,17 @@
+.gridWrapper {
+  padding-right: 80px;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  grid-row-gap: 50px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 400;
+  padding-right: 80px;
+  padding-left: 80px;
+  text-align: start;
+  text-transform: capitalize;
+}

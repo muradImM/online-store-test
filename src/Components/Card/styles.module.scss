@@ -1,0 +1,84 @@
+.imgWrapper {
+  position: relative;
+  display: block;
+  height: 350px;
+}
+
+.img {
+  border: 1px solid #5ECE7B;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  max-height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.wrapper {
+  text-align: start;
+  height: 500px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &.outOfStock {
+    opacity: 0.5;
+  }
+
+  &:hover {
+
+    & .buyButton {
+      background-color: #5ECE7B;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.textWrapper {
+  font-size: 18px;
+  cursor: default;
+  position: relative;
+}
+
+.buyButton {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  transform: translate(-50%, -80%);
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 50px;
+  height: 50px;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 80%;
+  z-index: 2;
+  border-radius: 10px;
+
+  &:before {
+    content: "Out of stock";
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #8D8F9A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.name {
+  font-weight: 300;
+}
+.price {
+  font-weight: 500;
+}

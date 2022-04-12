@@ -1,0 +1,51 @@
+@import "../../variables.module";
+
+.square {
+  font-family: $quaternary-font;
+  border: 1px solid black;
+  margin: 0 5px 24px 0;
+  cursor: pointer;
+  width: 65px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textAttribute {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.colorAttribute {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid #5ECE7B;
+  height: 35px;
+  width: 35px;
+  margin: 0 10px 24px 0;
+}
+
+.activeColor {
+  box-shadow: 0 0 0 2px #FFFFFF,
+  0 0 0 4px #5ECE7B;
+}
+
+.heading {
+  font-family: $tertiary-font;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
