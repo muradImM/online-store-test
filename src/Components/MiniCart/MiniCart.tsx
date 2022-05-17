@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from "./styles.module.scss";
-import TestComponent from "../CartTemplate/CartTemplate";
+import CartTemplate from "../CartTemplate/CartTemplate";
 
 interface IProps {
     toggle: Function
@@ -17,7 +17,7 @@ class MiniCart extends Component<IProps, {}> {
             <>
                 <div onClick={this.clickHandlerClose} className={styles.backdrop}/>
                 <div className={styles.wrapper}>
-                    <TestComponent miniCartHandler={this.clickHandlerClose} type={"overlay"}/>
+                    <CartTemplate miniCartHandler={this.clickHandlerClose} type={"overlay"}/>
                 </div>
             </>
 

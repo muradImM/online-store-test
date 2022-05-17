@@ -6,7 +6,7 @@ import Board from "./Components/Board/Board";
 import Header from "./Components/Header/Header";
 import SingleItem from "./Pages/SingleItemPage/SingleItem";
 import getCategories from "./api/getCategories";
-import TestComponent from "./Components/CartTemplate/CartTemplate";
+import CartTemplate from "./Components/CartTemplate/CartTemplate";
 
 class App extends Component {
 
@@ -40,7 +40,7 @@ class App extends Component {
                         <Header categories={this.state.categoriesToDrill}/>
                         <Routes>
                             {this.state?.categories?.map(e => e)}
-                            <Route path={CART} element={<TestComponent type={"page"}/>}/>
+                            <Route path={CART} element={<CartTemplate type={"page"}/>}/>
                         </Routes>
                     </>
                 }
