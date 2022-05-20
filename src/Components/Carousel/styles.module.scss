@@ -17,7 +17,6 @@
   height: 100px;
   object-fit: contain;
   display: block;
-  border: 1px solid #5ECE7B;
   margin-bottom: 30px;
 }
 
@@ -38,7 +37,7 @@
   transform: translate(-50%, 0);
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid #5ECE7B
+  border: 1px solid #5ECE7B;
 }
 
 .arrowUp {
@@ -54,8 +53,8 @@
   height: 700px;
 
   img {
-    border: 1px solid #5ECE7B;
-   max-width: 100%;
+
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
   }

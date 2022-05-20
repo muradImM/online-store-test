@@ -19,7 +19,7 @@ class Carousel extends Component<{ arr: string[] }, { active: number, position: 
 
     arrowDown = () => {
         const distance = this.state.position - 264
-        const max = -(this.props.arr.length - 1) * 132
+        const max = -(this.props.arr.length - 1) * 130
         this.setState({position: Math.max(distance, max)})
     }
 

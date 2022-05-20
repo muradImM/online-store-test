@@ -63,7 +63,7 @@ class Card extends Component<IProps, IState> {
 
     render() {
         return (
-            <>
+            <div className={styles.card}>
                 <div onClick={this.clickHandlerItem} className={
                     this.props.inStock
                         ? styles.wrapper
@@ -104,7 +104,7 @@ class Card extends Component<IProps, IState> {
                     prices={this.props.prices}
                     items={this.props.items}/>
                 }
-            </>
+            </div>
 
         )
     }
